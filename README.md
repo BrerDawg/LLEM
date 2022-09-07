@@ -106,6 +106,6 @@ obj file format (defines lines in an obj )
 
 
 ![ti_lpc_app](llem0.jpg)
-![ti_lpc_app](llem0.jpg)
+![ti_lpc_app](llem1.jpg)
 ![ti_lpc_app](llem0.gif)
 ![ti_lpc_app](llem1.gif)
