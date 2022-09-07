@@ -43,7 +43,7 @@ Adjust various settings in 'Edit/Preferences' menu.
 
 
 
-Help 'help.txt' menu calls bash script 'open_editor.sh', edit script to point to a text editor, e.g: 'gedit $1&'
+Help 'help.txt' menu calls bash script 'open_editor.sh' (needs execution priveleges), edit script to point to a text editor, e.g: 'gedit $1&'
 
 ## Development Mode
 Enable Development Mode in 'Edit/Preferences' menu to add the developement menu to menubar.
@@ -52,7 +52,7 @@ Navigate to a particular line using PgUp/PgDwn, and switch line endpoints with c
 
 Ship lines can be either just a black drawn line you see belonging to the ship. Or, they can be normally invisible landing pad collision detection lines (green) or crash collision detections lines (red), these are only visible while editing. The ship's green landing feet/pads collision detections lines must be around the actual drawn black landing feet/pads lines, the more there are the better the collision detection will work (due to sampling nature of ship position update code). They must be completely horizontal (dy = 0, use 'l' key), and be in left and right pairs that share the same y value.
 
-The moonscape's ground lines can be either just black drawn lines, or they can be landing zones (green) with a fuel amount (landing zones must be completely horiz, use 'l' key to set dy = 0). Landing zone lines must also be wide enough for a ship's landing pad collision detection lines to make contact without hitting any regular lines(black). Also be a aware regular black lines that drop away from a landing zone should be positioned slightly below the green landing zone line. This is required due the simplicity of the collision detection code. Put simply the faster the ship lands the more chance some of its landing feet/pad collision detection lines will 'pass through' a landing zone (due the frame based or sampling nature of the newtonian physics update code). That is, fast landing ships may be detected as a crash if there are regular ground lines sitting close to the surface of green landing zone. Use one of the supplied llem ship or moonscape obj files to see how lines are defined and positioned. Also note that lines that rise away from a langing zone, are positioned slight below the landing zone. This is required to help detect bouncing/skidding ship collisions. 
+The moonscape's ground lines can be either just black drawn lines, or they can be landing zones (green) with a fuel amount (landing zones must be completely horiz, use 'l' key to set dy = 0). Landing zone lines must also be wide enough for a ship's landing pad collision detection lines to make contact without hitting any regular lines(black). Also be a aware regular black lines that drop away from a landing zone should be positioned slightly below the green landing zone line. This is required due the simplicity of the collision detection code. Put simply the faster the ship lands the more chance some of its landing pad collision detection lines will 'pass through' a landing zone (due the frame based or sampling nature of the newtonian physics update code). That is, fast landing ships may be detected as a crash if there are regular ground lines sitting close to the surface of green landing zone. Use one of the supplied llem ship or moonscape obj files to see how lines are defined and positioned. Also note that lines that rise away from a langing zone, are positioned slight below the landing zone. This is required to help detect bouncing/skidding ship collisions. 
 
 You are able to PgDwn into the ground fuel digit's 7 segment lines, but don't bother editing these, they are not saved. The digits are added on the fly when the ground obj file is read, just define a green landing zone's fuel amount using the 'f' key, that value will be converted to 7 segment digit lines for display. 
 
@@ -103,9 +103,3 @@ obj file format (defines lines in an obj )
 | |__________________________________________________fuel value, e.g. 15 = 1500 units (if a landing zone)
 |____________________________________________________line type, e.g. ship or ground line and any special function that it represents, such a ship landing pad collision detection hotspot or ground landing zone(with fuel quota)
 ```
-
-
-![ti_lpc_app](llem0.jpg)
-![ti_lpc_app](llem1.jpg)
-![ti_lpc_app](llem0.gif)
-![ti_lpc_app](llem1.gif)
