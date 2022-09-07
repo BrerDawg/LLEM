@@ -103,3 +103,9 @@ obj file format (defines lines in an obj )
 | |__________________________________________________fuel value, e.g. 15 = 1500 units (if a landing zone)
 |____________________________________________________line type, e.g. ship or ground line and any special function that it represents, such a ship landing pad collision detection hotspot or ground landing zone(with fuel quota)
 ```
+
+
+![ti_lpc_app](llem0.jpg)
+![ti_lpc_app](llem0.jpg)
+![ti_lpc_app](llem0.gif)
+![ti_lpc_app](llem1.gif)
