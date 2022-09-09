@@ -216,4 +216,3 @@ obj file format (defines lines in an obj )
 ![LLEM](llem1.gif)
 
 
-
