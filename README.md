@@ -149,7 +149,7 @@ Adjust various settings in 'Edit/Preferences' menu.
 
 
 
-Help 'help.txt' menu calls bash script 'open_editor.sh' (needs execution priveleges), edit script to point to a text editor, e.g: 'gedit $1 ampersand'
+Help 'help.txt' menu calls bash script 'open_editor.sh' (needs execution priveleges), edit script to point to a text editor, e.g: 'gedit $1 ampersand '
 
 ## Development Mode
 Enable Development Mode in 'Edit/Preferences' menu to add the developement menu to menubar.
