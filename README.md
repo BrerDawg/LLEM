@@ -12,7 +12,7 @@ There is also a llem ship and moonscape editing feature allowing the user to tai
 
 ## Build
 Compliles with gnu gcc on Ubuntu 20.04. 
-Requires: pulseaudio, jack, and FLTK libraries for linking, fltk-1.3.4-2 or better should work.
+Requires: RTAudio, pulseaudio, jack, and FLTK libraries for linking, fltk-1.3.4-2 or better should work.
 
 To build, type: make
 
